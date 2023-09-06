@@ -1,0 +1,787 @@
+Question 1
+What was the output when you ran your solution?
+
+1 / 1 point
+
+[Onion, Cheese, Water]
+
+
+[Onion, Cheese, Water, Salt]
+
+
+Onion,
+
+Cheese,
+
+ Water
+
+Correct
+Correct! This is how Kotlin’s println outputs a list of strings and these are the ingredients that remain in the onion soup dish after removing salt. 
+
+2.
+Question 2
+Replace the Salt string in the removeSalt extension function with Cheese. Run the code. What is the output?
+
+1 / 1 point
+
+[Onion, Cheese, Water]
+
+
+[Onion, Water]
+
+
+[Onion, Water, Salt]
+
+Correct
+Correct! Salt is no longer removed from the list. Instead, cheese is removed. 
+
+3.
+Question 3
+Little Lemon asks you to write a new extension function to remove an ingredient (provided as a string) from a dish. Which of these extension functions will perform the requested task?
+
+1 / 1 point
+
+fun String.removeIngredient(dish: Dish) { dish.ingredients.remove(this) }
+
+Correct
+Correct! This function will extend the String class with the capability of removing ingredients from a provided dish. 
+
+
+fun String.removeIngredient(ingredient: String) { remove(ingredient) } 
+
+
+fun Dish.removeIngredient(ingredient: String) { ingredients.remove(ingredient) } 
+
+Correct
+Correct! This function will extend Dish with the capability of removing ingredients by name. 
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+Skip to Main Content
+Coursera
+Lovely Professional University
+
+SEARCH IN COURSE
+Search in course
+
+
+
+
+Advanced Programming in Kotlin
+Week 2
+Knowledge check: Extensions
+Extensions
+Video: VideoWhat are Extension functions?
+. Duration: 4 minutes4 min
+Video: VideoExtension functions in Android
+. Duration: 9 minutes9 min
+Reading: ReadingUse cases for extension functions
+. Duration: 15 minutes15 min
+Reading: ReadingExercise: Extensions
+. Duration: 20 minutes20 min
+Reading: ReadingSolution: Extensions
+. Duration: 15 minutes15 min
+Practice Quiz: Self review: Extensions
+3 questions
+Practice Quiz: Knowledge check: Extensions
+3 questions
+Reading: ReadingAdditional resources
+. Duration: 5 minutes5 min
+Testing
+Collections and generics
+Knowledge check: Extensions
+Practice Quiz15 minutes • 15 min
+Submit your assignment
+Receive grade
+To Pass 80% or higher
+Your grade
+100%
+We keep your highest score
+
+Knowledge check: Extensions
+Practice Quiz. • 15 min. • 3 total points available.3 total points
+
+Congratulations! You passed!
+Grade received 100%
+To pass 80% or higher
+1.
+Question 1
+Which of the below can be inherited? Select all that apply.
+
+1 / 1 point
+
+A final class
+
+
+An interface
+
+Correct
+Correct! Interfaces are designed to be inherited.
+
+
+An object
+
+
+An open class
+
+Correct
+Correct! Open classes are open for extension and can be inherited.
+
+2.
+Question 2
+Extension functions can be quite useful. Which of these are benefits of extension functions? Select all that apply.
+
+1 / 1 point
+
+They can override existing functions of a class.
+
+
+They can be called just like normal functions of the extended class.
+
+Correct
+Correct! Extension functions are called using the same syntax as normal functions.
+
+
+They allow extending final and 3rd party classes.
+
+Correct
+Correct! Extension functions let you extend behavior of classes that cannot or should not otherwise be modified.
+
+
+They can access private properties and functions of the extended class.
+
+3.
+Question 3
+You are asked to implement an extension function for the final Dish class that would print out its ingredients field. How would the extension function look?
+
+1 / 1 point
+
+fun List<Ingredient>.printIngredients(dish: Dish) { println(this) }
+
+
+fun Dish.printIngredients(ingredients: List<Ingredient>) { println(ingredients) }
+
+
+fun printIngredients(dish: Dish) { println(dish.ingredients) }
+
+
+fun Dish.printIngredients() { println(ingredients) }
+
+Correct
+Correct! This is the right syntax for the requested extension function.
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+Skip to Main Content
+Coursera
+Lovely Professional University
+
+SEARCH IN COURSE
+Search in course
+
+
+
+Advanced Programming in Kotlin
+Week 2
+Self review: Write a unit test
+Extensions
+Testing
+Video: VideoWhat is testing?
+. Duration: 5 minutes5 min
+Video: VideoTypes of testing
+. Duration: 5 minutes5 min
+Video: VideoUnit testing in Kotlin
+. Duration: 4 minutes4 min
+Reading: ReadingUsing fakes
+. Duration: 15 minutes15 min
+Reading: ReadingUsing mocks
+. Duration: 10 minutes10 min
+Reading: ReadingExercise: Write a unit test
+. Duration: 15 minutes15 min
+Reading: ReadingSolution: Write a unit test
+. Duration: 10 minutes10 min
+Practice Quiz: Self review: Write a unit test
+3 questions
+Video: VideoTDD (Test-Driven Development)
+. Duration: 4 minutes4 min
+Reading: ReadingAdditional resources
+. Duration: 5 minutes5 min
+Collections and generics
+Self review: Write a unit test
+Practice Quiz9 minutes • 9 min
+Submit your assignment
+Receive grade
+To Pass 80% or higher
+Your grade
+100%
+We keep your highest score
+
+Self review: Write a unit test
+Practice Quiz. • 9 min. • 3 total points available.3 total points
+
+Congratulations! You passed!
+Grade received 100%
+To pass 80% or higher
+1.
+Question 1
+How do you convert the regular function into the test function?
+
+1 / 1 point
+
+Mark the function with Test annotation.
+
+
+Mark the class where it is located with Test annotation.
+
+
+Append test_ prefix to the function name.    
+
+Correct
+Correct! Test annotation enables the function be to run as test.
+
+2.
+Question 2
+What is the correct order of AAA pattern?
+
+1 / 1 point
+
+Act – Arrange – Assert
+
+
+Arrange – Act – Assert
+
+
+Assert – Act – Arrange
+
+Correct
+Correct! First, you set up the test environment. Next, execute the operation under test and then, examine the outcome.    
+
+3.
+Question 3
+Which of three tests for Product class will fail, if you change the minimum amount for discount from 5 to 10? (Hint: update the applyDiscount function and see)  
+
+1 / 1 point
+
+The first and the second tests will fail.
+
+
+Only the second test will fail.
+
+
+All tests will fail.
+
+Correct
+Correct! The first test case still passes, as given amount for spaghetti, 3, is still less than minimum amount and it is eligible for discount, while the last test case (out of stock), is not affected by changes.   
+
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+Skip to Main Content
+Coursera
+Lovely Professional University
+
+SEARCH IN COURSE
+Search in course
+
+
+
+
+Advanced Programming in Kotlin
+Week 2
+Self review: Defining generic classes and functions
+Extensions
+Testing
+Collections and generics
+Video: VideoCollections recap
+. Duration: 3 minutes3 min
+Reading: ReadingList and set recap
+. Duration: 20 minutes20 min
+Reading: ReadingMap recap
+. Duration: 20 minutes20 min
+Video: VideoWhat are generics classes?
+. Duration: 3 minutes3 min
+Video: VideoGenerics functions
+. Duration: 3 minutes3 min
+Reading: ReadingExercise: Defining generic classes and functions
+. Duration: 20 minutes20 min
+Reading: ReadingSolution: Defining generic classes and functions
+. Duration: 20 minutes20 min
+Practice Quiz: Self review: Defining generic classes and functions
+3 questions
+Practice Quiz: Knowledge check: Collections and generics
+3 questions
+Video: VideoModule summary: Advanced Object-Oriented Features
+. Duration: 2 minutes2 min
+Quiz: Module quiz: Advanced Object-Oriented Features
+10 questions
+Reading: ReadingAdditional resources
+. Duration: 5 minutes5 min
+Self review: Defining generic classes and functions
+Practice Quiz9 minutes • 9 min
+Submit your assignment
+Receive grade
+To Pass 80% or higher
+Your grade
+100%
+We keep your highest score
+
+Self review: Defining generic classes and functions
+Practice Quiz. • 9 min. • 3 total points available.3 total points
+
+Congratulations! You passed!
+Grade received 100%
+To pass 80% or higher
+1.
+Question 1
+When you run your solution for the exercise Defining generic classes and functions, what is the output?
+
+1 / 1 point
+
+2
+
+
+1
+
+
+[Cheese, Cheese]
+
+Correct
+Correct! Since addIngredient was called twice, contents holds two elements.
+
+2.
+Question 2
+If you replaced the type passed to newInventory from Cheese to Onion, when you run your solution, which of the following would be a valid statement?
+
+1 / 1 point
+
+cheeseInventory.addIngredient(Cheese)
+
+
+cheeseInventory.addIngredient("Onion")
+
+
+cheeseInventory.addIngredient(Onion)
+
+Correct
+Correct! After your change, the addIngredient function of cheeseInventory only accepts arguments of type Onion.
+
+3.
+Question 3
+For the code implemented in Step 2 of the exercise, which of the below statements are valid? 
+
+1 / 1 point
+
+Inventory<Flour>()
+
+Correct
+Correct! Flour implements Ingredient and is a valid generic type for Inventory. 
+
+
+Inventory<Egg>()
+
+Correct
+Correct! Egg inherits from Ingredient and is therefore a valid generic type for Inventory.
+
+
+Inventory<"Milk">()
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+Skip to Main Content
+Coursera
+Lovely Professional University
+
+SEARCH IN COURSE
+Search in course
+
+
+Ashwini Kumar
+
+Advanced Programming in Kotlin
+Week 2
+Knowledge check: Collections and generics
+Extensions
+Testing
+Collections and generics
+Video: VideoCollections recap
+. Duration: 3 minutes3 min
+Reading: ReadingList and set recap
+. Duration: 20 minutes20 min
+Reading: ReadingMap recap
+. Duration: 20 minutes20 min
+Video: VideoWhat are generics classes?
+. Duration: 3 minutes3 min
+Video: VideoGenerics functions
+. Duration: 3 minutes3 min
+Reading: ReadingExercise: Defining generic classes and functions
+. Duration: 20 minutes20 min
+Reading: ReadingSolution: Defining generic classes and functions
+. Duration: 20 minutes20 min
+Practice Quiz: Self review: Defining generic classes and functions
+3 questions
+Practice Quiz: Knowledge check: Collections and generics
+3 questions
+Video: VideoModule summary: Advanced Object-Oriented Features
+. Duration: 2 minutes2 min
+Quiz: Module quiz: Advanced Object-Oriented Features
+10 questions
+Reading: ReadingAdditional resources
+. Duration: 5 minutes5 min
+Knowledge check: Collections and generics
+Practice Quiz15 minutes • 15 min
+Submit your assignment
+Receive grade
+To Pass 80% or higher
+Your grade
+100%
+We keep your highest score
+
+Knowledge check: Collections and generics
+Practice Quiz. • 15 min. • 3 total points available.3 total points
+
+Congratulations! You passed!
+Grade received 100%
+To pass 80% or higher
+1.
+Question 1
+What operations can you perform on a MutableCollection but not on a Collection? 
+
+1 / 1 point
+
+Add an element.
+
+Correct
+Correct! You can only add an element to a MutableCollection.
+
+
+Read an element.
+
+
+Remove an element.
+
+Correct
+Correct! You can only remove an element from a MutableCollection.
+
+
+Get a count of the elements in the collection.
+
+2.
+Question 2
+Which of the following statements declares a generic class in Kotlin?
+
+1 / 1 point
+
+abstract class GenericClass
+
+
+class GenericClass<TYPE>
+
+
+class GenericClass
+
+
+generic class GenericClass
+
+Correct
+Correct! This is the right syntax for declaring a generic class.
+
+3.
+Question 3
+You need to instantiate a field named employeeNames of type List<String>. Which of the following statements is valid in Kotlin?
+
+1 / 1 point
+
+val employeeNames: List<String> = "James, Ella"
+
+
+val employeeNames: List<String> = ("James", "Ella")
+
+
+val employeeNames: List<String> = ["James", "Ella"]
+
+
+val employeeNames: List<String> = listOf("James", "Ella")
+
+Correct
+Correct! This is the correct syntax for instantiating a list of strings.
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+Skip to Main Content
+Coursera
+Lovely Professional University
+
+SEARCH IN COURSE
+Search in course
+
+
+Ashwini Kumar
+
+Advanced Programming in Kotlin
+Week 2
+Module quiz: Advanced Object-Oriented Features
+Extensions
+Testing
+Collections and generics
+Video: VideoCollections recap
+. Duration: 3 minutes3 min
+Reading: ReadingList and set recap
+. Duration: 20 minutes20 min
+Reading: ReadingMap recap
+. Duration: 20 minutes20 min
+Video: VideoWhat are generics classes?
+. Duration: 3 minutes3 min
+Video: VideoGenerics functions
+. Duration: 3 minutes3 min
+Reading: ReadingExercise: Defining generic classes and functions
+. Duration: 20 minutes20 min
+Reading: ReadingSolution: Defining generic classes and functions
+. Duration: 20 minutes20 min
+Practice Quiz: Self review: Defining generic classes and functions
+3 questions
+Practice Quiz: Knowledge check: Collections and generics
+3 questions
+Video: VideoModule summary: Advanced Object-Oriented Features
+. Duration: 2 minutes2 min
+Quiz: Module quiz: Advanced Object-Oriented Features
+10 questions
+Reading: ReadingAdditional resources
+. Duration: 5 minutes5 min
+Module quiz: Advanced Object-Oriented Features
+Quiz30 minutes • 30 min
+Submit your assignment
+Due September 17, 11:59 PM ISTSep 17, 11:59 PM IST
+Attempts 3 every 8 hours
+Receive grade
+To Pass 80% or higher
+Your grade
+80%
+We keep your highest score
+
+Module quiz: Advanced Object-Oriented Features
+Graded Quiz. • 30 min
+
+DueSep 17, 11:59 PM IST
+Congratulations! You passed!
+Grade received 80%
+Latest Submission Grade 80%
+To pass 80% or higher
+1.
+Question 1
+For a class Rectangle, which of these represents the correct syntax for defining an extension function getWidth?
+
+1 / 1 point
+
+1
+fun Rectangle getWidth(): Int
+
+
+1
+fun Rectangle.getWidth(): Int
+
+
+1
+fun getWidth<Rectangle>(): Int
+
+Correct
+Correct. You use the dot operator after the class name and before the function name to define an extension function.
+
+2.
+Question 2
+For the extension function fun Rectangle.getWidth(): Int, what is the correct way to call the function in the code?
+
+0 / 1 point
+
+1
+Rectangle.getWidth()
+
+
+1
+Rectangle().getWidth()
+
+
+1
+getWidth(Rectangle())
+
+Incorrect
+Not quite. Please revisit 
+Extension functions in Android
+ in Week 2.
+
+3.
+Question 3
+Which type of testing is performed to test individual components of an application’s code logic?
+
+1 / 1 point
+
+Integration testing
+
+
+Unit testing
+
+
+End-to-end testing
+
+Correct
+Correct. Unit testing is performed to test individual components, also known as the unit under test.
+
+4.
+Question 4
+While using JUnit, which annotation is used to mark a function as a unit test?
+
+1 / 1 point
+
+@UnitTest
+
+
+@Test
+
+
+@JUnitTest
+
+Correct
+Correct. You use @Test annotation to mark a function as a test.
+
+5.
+Question 5
+When should you use mocks in your tests?
+
+0 / 1 point
+
+When you need to define a complete alternate definition of an object to be used for testing.
+
+
+When there are objects that are not to be tested but are needed because the code under test depends on them.
+
+
+When you need to test only some specific behavior of an object
+
+Incorrect
+Not quite. You can revise this topic in the 
+Using mocks
+ reading in Week 2.
+
+6.
+Question 6
+Which of these is a definition of the List collection type?
+
+1 / 1 point
+
+An unordered group of elements that cannot contain duplicate elements.
+
+
+An ordered group of elements that can contain duplicate elements.
+
+
+An unordered group of elements that can contain duplicate elements.
+
+Correct
+Correct. A List is an ordered group of elements that can contain duplicate elements.
+
+7.
+Question 7
+What is the output of the code below:
+
+123
+val numberSet = setOf(1, 8, 5, 7, 5, 2)
+println(numberSet)
+
+
+1 / 1 point
+
+[1, 8, 5, 7, 5, 2]
+
+
+[1, 8, 5, 7, 2]
+
+
+[1, 8, 7, 2]
+
+Correct
+Correct. A set cannot contain duplicate elements.
+
+8.
+Question 8
+What is the output of the following code:
+
+123456789
+val map = mapOf(
+ 1 to 90, 
+ 2 to 93,
+ 3 to 91,
+ 4 to 93,
+ 2 to 95,
+ 5 to 93
+)
+println(map)
+
+1 / 1 point
+
+{1=90, 2=93, 3=91, 4=93, 5=93}
+
+
+{1=90, 2=95, 3=91, 4=93, 5=93}
+
+
+{1=90, 2=93, 3=91, 4=93, 2=95, 5=93}
+
+Correct
+Correct. A map stores unique keys, but the values do not have to be unique.
+
+9.
+Question 9
+Which of these represents the correct syntax for defining a generic class?
+
+1 / 1 point
+
+1
+class <T> Item(t: T) { }
+
+
+1
+class Item<T>(t: T) { }
+
+
+1
+class <T>.Item(t: T) { }
+
+Correct
+Correct. The generic parameter enclosed in the angle brackets is written after the class name.
+
+10.
+Question 10
+Which of these represents the correct syntax for defining a generic function?
+
+1 / 1 point
+
+1
+fun sampleFunction<T> (item: T) { }
+
+
+1
+fun <T> sampleFunction(item: T) { }
+
+
+1
+fun <T>.sampleFunction(item: T) { }
+
+Correct
+Correct. Generic type parameters are placed before the name of the function.
+
+
+

@@ -1,0 +1,737 @@
+
+Question 1
+True or False: Android does not provide a way for the 3rd party app to start up activities belonging to other apps.
+
+1 / 1 point
+
+True
+
+
+
+False
+
+
+Correct
+Correct! You can start up activities belonging to other apps. For example, you can run the camera to take a photo that will be added directly to your application.
+
+2.
+Question 2
+One of the fundamental differences between the traditional View system and Compose is their development philosophy. What are their approaches?
+
+1 / 1 point
+
+The View system follows the imperative approach, while Compose is based on the declarative approach to building UI.
+
+
+
+The View system and Compose both use the imperative approach.
+
+
+
+The View system and Compose both use the declarative approach.
+
+
+
+The View system follows the declarative approach, while Compose is based on the imperative approach to building UI.
+
+
+Correct
+Correct! The Declarative approach describes desired result (what), while imperative approach describes exact sequence of steps (how). 
+
+3.
+Question 3
+What can a layout contain? Select all that apply.
+
+0 / 1 point
+
+Screens
+
+
+This should not be selected
+Not quite. Please review the video 
+Layouts in Compose
+.
+
+
+UI Elements
+
+
+Correct
+Correct! Layouts may contain simple UI elements.
+
+
+Activities
+
+
+
+Other layouts
+
+
+Correct
+Correct! Layouts may contain other layouts.
+
+4.
+Question 4
+Which statements are true about modifiers? Select all that apply.
+
+1 / 1 point
+
+Modifiers allow you to impart specific interactivity or behavior to the elements.
+
+
+Correct
+Correct! You can, for example, make a button or a text clickable using modifiers.
+
+
+When augmenting appearance, modifiers can act as decorators.
+
+
+Correct
+Correct! Modifiers decorate or style the UI elements or composables. Modifiers can, for example, modify the size, position, spacing and color.
+
+
+A modifier is responsible for modifying Activity behavior.
+
+
+5.
+Question 5
+In the code below, what is the reason behind usage of the remember function and mutableStateOf observable?
+
+val value = remember { mutableStateOf(/*some value*/) }
+
+1 / 1 point
+
+Prevent reset of the variable value during recomposition.
+
+
+
+Reset of the variable value during recomposition.
+
+
+
+Reset of the variable value during function call.
+
+
+Correct
+Correct! To retain the value, you have to use the remember function and mutableStateOf observable. Otherwise, the function would reset the variable to its initial value.
+
+6.
+Question 6
+Which of the following are part of Jetpack navigation?
+
+Select all that apply. 
+
+1 / 1 point
+
+NavHost
+
+
+Correct
+Correct! NavHost is a container for displaying the current destination. 
+
+
+NavGraph
+
+
+Correct
+Correct! Every screen display in an Android application is a destination in navigation. 
+
+
+NavController
+
+
+Correct
+Correct! NavController is responsible for navigating between destinations while keeping track and manipulating the back state. 
+
+
+NavCompose
+
+
+7.
+Question 7
+Which lazy composable is not included in Jetpack compose?
+
+1 / 1 point
+
+LazyColumn
+
+
+
+LazyRow
+
+
+
+LazyButton
+
+
+
+LazyGrid
+
+
+Correct
+Correct! Lazy composables deal with a large number of items or items of unknown length, because they can cause performance issues. Button does not deal with lists of items, so it doesn’t have to be lazy.
+
+8.
+Question 8
+True or False: Modifying the Button style in the theme will change the appearance of every button in the application unless the theme style is overridden.
+
+1 / 1 point
+
+True 
+
+
+
+False
+
+
+Correct
+Correct! A theme change will be applied to every screen in the application. For example, a new background color for a Button will be applied to all buttons in every application screen.
+
+9.
+Question 9
+Which unit would you use to set text size?
+
+1 / 1 point
+
+sp (scalable pixel)
+
+
+
+dp (density independent pixel)
+
+
+
+both sp and dp can be used
+
+
+Correct
+Correct! Unlike the width and height of other composables which are set in density independent pixel or dp, the text size is set in scalable pixel, also known as sp.
+
+10.
+Question 10
+Which of the following composables animated the appearance and disappearance of its content?
+
+1 / 1 point
+
+VisibleAnimation
+
+
+
+Animation
+
+
+
+Visibility
+
+
+
+AnimatedVisibility
+
+
+Correct
+Correct! The AnimatedVisibility composable smooths out Text transition from one state to another, from the component being visible to invisible and vice versa. 
+
+11.
+Question 11
+How does an Activity enable interaction?
+
+1 / 1 point
+
+It provides access to device resources.
+
+
+
+It performs calculations in the background.
+
+
+
+It provides a screen containing the user interface enabling interaction with UI elements.
+
+
+
+It allows the user to set custom preferences.
+
+
+Correct
+Correct! An Activity is an application component that contains the user interface and represents the application screen.
+
+12.
+Question 12
+Which of the following is the parent class for all types of views?
+
+1 / 1 point
+
+ImageView
+
+
+
+TextView
+
+
+
+View
+
+
+
+ViewGroup
+
+
+Correct
+Correct! View defines the basic building block for any user interface, component or element.
+
+13.
+Question 13
+Which of the following is is the state an Activity enters as soon as it becomes visible on the screen?
+
+0 / 1 point
+
+paused
+
+
+
+resumed
+
+
+
+started.
+
+
+
+created
+
+
+Incorrect
+Not quite. Please review the video 
+The activity lifecycle
+.
+
+14.
+Question 14
+Which of the following are examples of view groups? Select all that apply.
+
+1 / 1 point
+
+ImageViewLayout
+
+
+
+FrameLayout
+
+
+Correct
+Correct! FrameLayout is designed to block out an area of the screen to display a single item.
+
+
+LinearLayout
+
+
+Correct
+Correct! LinearLayout organizes contained views horizontally or vertically as a single row or column.
+
+
+RelativeLayout
+
+
+Correct
+Correct! RelativeLayout specifies the position of contained views relative to one another.
+
+15.
+Question 15
+Which of the following is the approach used by Jetpack Compose to build a user interface?
+
+1 / 1 point
+
+declarative
+
+
+
+hierarchical
+
+
+
+imperative
+
+
+
+traditional
+
+
+Correct
+Correct! The declarative approach allows developers to focus more on the application logic rather than XML and visual design.
+
+16.
+Question 16
+Which of the following is the correct way to define a composable function?
+
+1 / 1 point
+
+1234
+Composable 
+fun Profile(username: String) {
+ Text(text = “$username”)
+}
+
+
+
+123
+fun Profile(username: String) {
+ Text(text = “$username”)
+}
+
+
+
+54123
+@Composable 
+fun Profile(username: String) {
+ Text(text = “$username”)
+} 
+
+
+
+Correct
+Correct! Composables are reusable UI components defined with the @Composable annotation.
+
+17.
+Question 17
+Which of the following is an annotation that allows developers to easily create components that are modular and reusable?
+
+1 / 1 point
+
+@Annotation
+
+
+
+@Composable
+
+
+
+@Component
+
+
+
+@Kotlin
+
+
+Correct
+Correct! Jetpack Compose can be used to build a hierarchical UI consisting of composable functions.
+
+18.
+Question 18
+Which of the following is an invisible UI element that acts as a container to other UI elements?
+
+1 / 1 point
+
+layout
+
+
+
+composable
+
+
+
+row
+
+
+
+column
+
+
+Correct
+Correct! Layouts are guides in organizing and arranging other UI elements on the screen.
+
+19.
+Question 19
+Which of the following annotations allows you to preview designs built with Jetpack Compose?
+
+1 / 1 point
+
+@Preview
+
+
+
+@Composable
+
+
+
+Preview
+
+
+Correct
+Correct! The @Preview annotation accepts three optional parameters: name, showDecoration and group. These optional parameters allow additional configuration of the generated preview.
+
+20.
+Question 20
+Which of the following modifiers is used to set the background color of a composable?
+
+1 / 1 point
+
+color
+
+
+
+layoutColor 
+
+
+
+background
+
+
+
+backgroundColor
+
+
+Correct
+Correct! The background modifier accepts a color object as an argument.
+
+21.
+Question 21
+Imagine you have an Image composable displaying a cat with a height of 300 dp. Which of the following is the correct way to add rounded corners of 30 dp to the image? 
+
+1 / 1 point
+
+12345
+Column(
+ painter = painterResource(id = R.drawable.cat), 
+ contentDescription = “an image of a cat”,
+ Modifier.height(300.dp).clip(RoundedCornerShape(30.dp))
+)
+
+
+
+12345
+Image(
+ painter = painterResource(id = R.drawable.cat), 
+ contentDescription = “an image of a cat”,
+ Modifier.height(300.dp).clip(RoundedCornerShape(30.dp))
+)
+
+
+
+12345
+Image(
+ painter = painterResource(id = R.drawable.cat), 
+ contentDescription = “an image of a cat”,
+ Modifier.height(300.dp).roundedCornerShape(30.dp)
+)
+
+
+Correct
+Correct! The .clip modifier can be used with a supplied argument of the desired amount of the rounded shape.
+
+22.
+Question 22
+Which of the following is the default event handler added to the Button composable by Jetpack Compose?
+
+1 / 1 point
+
+onClick
+
+
+
+onStart
+
+
+
+onPress
+
+
+
+onInput 
+
+
+Correct
+Correct! The onClick event handler will execute the specified code in response to the Button being clicked.
+
+23.
+Question 23
+Which of the following can be used to implement interaction handling in Jetpack Compose?
+
+1 / 1 point
+
+events 
+
+
+
+event modifiers
+
+
+
+long presses
+
+
+
+clicks
+
+
+Correct
+Correct! Event modifiers are a powerful tool for enhancing the user experience and providing a more dynamic and interactive UI.
+
+24.
+Question 24
+Which of the following refers to a current snapshot or condition of a program that changed over time?
+
+1 / 1 point
+
+state
+
+
+
+user interfaces
+
+
+
+events
+
+
+
+activities 
+
+
+Correct
+Correct! State is generally referred to as the data of some piece of information of a program that changed over time.
+
+25.
+Question 25
+What is a Scaffold in Jetpack Compose?
+
+1 / 1 point
+
+A collection of presets. 
+
+
+
+A customizable layout.
+
+
+
+A state management library.
+
+
+
+A fixed layout.
+
+
+Correct
+Correct! A Scaffold is a convenient way to combine UI patterns and Material Components.
+
+26.
+Question 26
+When implementing navigation in Jetpack Compose, which of the following must be created at the top of the composable hierarchy?
+
+0 / 1 point
+
+NavController
+
+
+
+Destination
+
+
+
+NavHost
+
+
+
+MainActivity
+
+
+Incorrect
+Not quite. Please review the video 
+Navigation in Compose
+.
+
+27.
+Question 27
+Which of the following Jetpack Compose layout arrangements adds equal space to all children?
+
+1 / 1 point
+
+start
+
+
+
+space around
+
+
+
+center
+
+
+
+space evenly
+
+
+Correct
+Correct! The space evenly arrangement adds equal space to the children of a List including space at the start and end.
+
+28.
+Question 28
+Which of the following would you use to create a vertical scrollable List for a large or unknown number of items?
+
+1 / 1 point
+
+lazy column
+
+
+
+lazy grid
+
+
+
+lazy list
+
+
+
+lazy row
+
+
+Correct
+Correct! Lazy column takes care of scrolling and recomposing items when required.
+
+29.
+Question 29
+Which of the following is a mechanism for unifying and maintaining the application look and feel across all screens?
+
+1 / 1 point
+
+a theme
+
+
+
+XML
+
+
+
+a composable hierarchy
+
+
+
+a design system
+
+
+Correct
+Correct! The appearance of multiple screens can be controlled by a single theme.
+
+30.
+Question 30
+Which of the following APIs can be used to make sure a composable retains its state during recomposition triggered by animation?
+
+1 / 1 point
+
+state API
+
+
+
+animate*AsState API
+
+
+
+remember API
+
+
+
+recomposition API
+
+
+Correct
+Correct! The by remember keyword can be used in a variable declaration to ensure the state value is maintained across recomposition. 

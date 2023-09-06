@@ -1,0 +1,401 @@
+Question 1
+What was the output when you ran your solution? 
+
+1 / 1 point
+
+1.8
+
+
+1.33
+
+
+1.5
+
+Correct
+Correct! This is the sales tax amount for the list of OrderItem and given sales tax percentage. 
+
+2.
+Question 2
+What is the output of the program if you add another OrderItem in the list – Ice cream (4$)?
+
+1 / 1 point
+
+1.805
+
+
+1.9
+
+
+1.71
+
+Correct
+Correct! This is the sales tax amount for the list of OrderItem and given sales tax percentage. 
+
+3.
+Question 3
+How can you call a function fun sayHello() defined within a companion object of a class ‘Greeting’? 
+
+1 / 1 point
+
+Greeting.sayHello()
+
+
+Greeting().sayHello()
+
+Correct
+Correct! You can invoke the function using the class name and the dot operator.
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+Question 1
+RestaurantMenu is a Kotlin object with a mutable list. Which of the following statements is true? Select all that apply.  
+
+0.75 / 1 point
+
+Adding the same element from activity A or from activity B will lead to different results.
+
+This should not be selected
+Not quite. Objects in Kotlin are singletons. It doesn’t matter where we modify them, the results will be the same.
+
+
+An element added to the list from activity A will be accessible from activity B
+
+Correct
+Correct! Objects in Kotlin are singletons. Adding an element from anywhere would be reflected everywhere.
+
+
+An element added to the list from activity A will not be accessible from activity B
+
+
+Clearing the list from activity A will clear the list for activity B as well.
+
+Correct
+Correct! Objects in Kotlin are singletons. Any changes to the RestaurantMenu will be reflected everywhere.
+
+2.
+Question 2
+Little Lemon has only one restaurant. Which entity would best represent it?
+
+1 / 1 point
+
+Interface
+
+
+List
+
+
+Object
+
+
+Class
+
+Correct
+Correct! An object in Kotlin guarantees you will only have a single instance of Little Lemon.
+
+3.
+Question 3
+Which of the following statements about companion objects are correct?
+
+1 / 1 point
+
+A companion object is a singleton
+
+
+Companion objects can belong to multiple classes
+
+
+You can have multiple companion objects per class
+
+
+You must add a companion object for each class
+
+Correct
+Correct! Companion objects are singletons. There is only one instance of each companion object per class.
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+Question 1
+In the companion object of IngredientsActivity, you have a start function. In that function, you initialize an Intent. Which of the following calls did you use?
+
+1 / 1 point
+
+val intent = Intent(context, IngredientsActivity::class.java)
+
+
+ val intent = Intent(context, IngredientsActivity::class)
+
+
+val intent = Intent(IngredientsActivity::class.java , context)
+
+Correct
+Correct! The intent constructor expects a context followed by the Java class of the activity to start. 
+
+2.
+Question 2
+In the onCreate function of the IngredientsActivity class, replace the Pasta string with Pizza. Run the code and tap the Pasta button. What happens?
+
+1 / 1 point
+
+IngredientsActivity launches with Unknown dish
+
+
+IngredientsActivity launches with the ingredients for a pizza
+
+
+IngredientsActivity no longer launches.
+
+Correct
+Correct! The Pasta argument is no longer recognized by IngredientsActivity. Any unknown argument leads to Unknown dish being presented.
+
+3.
+Question 3
+Which of the following will start IngredientsActivity from MainActivity?   Select all that apply.
+
+1 / 1 point
+
+startActivity(IngredientsActivity)
+
+
+startActivity(Intent(this, IngredientsActivity::class.java))
+
+Correct
+Correct! You can instantiate Intent with the appropriate arguments and pass it to startActivity to start IngredientsActivity.
+
+
+IngredientsActivity.start(this, “Pasta”)
+
+Correct
+Correct! Calling the static start function on IngredientsActivity will start this activity. 
+
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+Question 1
+Which option demonstrates the correct way to initialize an object in Kotlin? 
+
+1 / 1 point
+
+object CustomObject( ) { }
+
+
+object CustomObject { }
+
+
+object CustomObject( )
+
+Correct
+Correct! You use a block enclosed by a pair of curly braces that represent the object’s body.
+
+2.
+Question 2
+Which option represents the correct way to call the function getNumberOfWheels defined in the object below:
+
+1234
+object Car {
+ fun getNumberOfWheels() = 4
+}
+
+
+1 / 1 point
+
+println(Car.getNumberOfWheels)
+
+
+println(Car().getNumberOfWheels())
+
+
+println(Car.getNumberOfWheels())
+
+Correct
+Correct! You access a member of an object simply by using the object’s name and the dot operator.
+
+3.
+Question 3
+What is the correct syntax to call the function printHello defined in the code below:
+
+1234567
+class Outer {
+    class Nested {
+        fun printHello() {
+            println("Hello")
+        }
+    }
+}
+
+1 / 1 point
+
+Outer.Nested().printHello()
+
+
+Nested().printHello()
+
+
+Outer().Nested().printHello()
+
+Correct
+Correct! The nested class is accessed using the class name and the dot operator.
+
+4.
+Question 4
+What is the correct syntax to call the function printHello defined in the code below:
+
+12345678
+class Outer {
+    inner class Inner {
+        fun printHello() {
+            println("Hello")
+        }
+    }
+}
+
+
+0 / 1 point
+
+Outer().Inner().printHello()
+
+
+Inner().printHello()
+
+
+Outer.Inner().printHello()
+
+Incorrect
+Not quite. You can revise this topic in the 
+Inner classes
+ reading of Week 1.
+
+5.
+Question 5
+Which of these are correct ways to access the variable wheelCount in the code below:
+
+123456
+class Car {
+    companion object {
+        val wheelCount = 4
+    }
+}
+
+
+1 / 1 point
+
+Car.Companion.wheelCount
+
+Correct
+Correct. You can access the companion object using Classname.Companion 
+
+
+Car().wheelCount
+
+
+Car.companion.wheelCount
+
+
+Car.wheelCount
+
+Correct
+Correct. You can access the members of companion object using Classname.memberName and omit the word ‘Companion’ until companion object explicity states a name.
+
+6.
+Question 6
+When should you use a companion object in a class?
+
+1 / 1 point
+
+To define members that should not be accessible outside the class
+
+
+To define members that should be accessible by an object of a class
+
+
+To define members that should be accessible without an object of a class and only using the class name
+
+Correct
+Correct. You can access the companion object using the class name without the need to have an instance of a class.
+
+7.
+Question 7
+Which of the following keywords is used to declare a constant in Kotlin?
+
+1 / 1 point
+
+final
+
+
+constant
+
+
+const
+
+Correct
+Correct! You use the const keyword to declare a constant in Kotlin.
+
+8.
+Question 8
+Which of these is correct if you wish to navigate from an activity called SourceActivity to another activity called  DestinationActivity in Android? 
+(Assume that the Context object can be referenced using context and an instance of SourceActivity can be referenced as sourceActivity)
+
+0 / 1 point
+
+val intent = Intent(context, DestinationActivity::class.java)
+
+
+val intent = Intent(DestinationActivity::class.java, sourceActivity)
+
+
+val intent = Intent(SourceActivity::class.java, DestinationActivity::class.java)
+
+
+val intent = Intent(sourceActivity, DestinationActivity::class.java)
+
+Correct
+Correct! You can define an intent by passing the instance of calling activity (as Activity class inherits from Context class) and class reference of the activity to be started.
+
+You didn’t select all the correct answers
+9.
+Question 9
+What is the right way to use the function startActivity to start an activity? 
+
+1 / 1 point
+
+Activity.startActivity(intent)
+
+
+context.startActivity(intent)
+
+
+startActivity(context, intent) 
+
+Correct
+Correct! You need to call the startActivity function using an instance of Context and pass an intent to the function.
+
+10.
+Question 10
+Which one of the below lines can you use to pass an argument to an activity? (Assume an instance of Intent can be referenced using intent variable)
+
+1 / 1 point
+
+intent.putExtra(“message”, “hello”)
+
+
+intent.getExtra(“message”, “hello”)
+
+
+intent.putExtra(“hello”)
+
+Correct
+Correct! You pass the key for the data as the first argument and its corresponding value as the second argument.
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+

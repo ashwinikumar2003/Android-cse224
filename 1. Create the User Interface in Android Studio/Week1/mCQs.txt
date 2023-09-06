@@ -1,0 +1,434 @@
+1.
+Question 1
+When defining the string resource in the exercise, what was the ID of the title string? 
+
+1 / 1 point
+
+R.id.string.title
+
+
+R.string.title
+
+
+R.id.title
+
+Correct
+Correct. The string inner class in R contains the IDs of the string resources
+
+2.
+Question 2
+Adding the font size parameter to RestaurantName() composable limits it to emit Text of 32sp only.
+
+1 / 1 point
+
+ True 
+
+
+False
+
+Correct
+Correct. The font size of the RestaurantName() text would vary depending upon the value passed as an argument
+
+3.
+Question 3
+How many arguments were passed to the RestaurantNamePreview() function?
+
+1 / 1 point
+
+One 
+
+
+Two
+
+
+None 
+
+Correct
+Correct. The preview function did not accept any argument.
+
+Question 1
+Declarative UI programming allows developers to define the UI and its behavior in a concise and expressive way by describing the desired result instead of the details of how to achieve it.    
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+That’s correct.  This describes the concept behind Jetpack Compose's declarative UI programming model.
+
+2.
+Question 2
+ In Jetpack Compose the ‘Compose’ item can best be described as:    
+
+1 / 1 point
+
+Compose is a tool that builds a UI without needing to use an Activity
+
+
+A library for developing UI that is part of the Jetpack suite.
+
+Correct
+That’s correct! Compose is a library for developing UI and is part of the Jetpack suite.
+
+
+A reusable view component.
+
+Correct
+That’s correct! Compose is an atomic UI element and is part of the Jetpack compose library.
+
+3.
+Question 3
+What are the three main benefits to using a declarative approach when building an Android UI? Select all that apply.
+
+1 / 1 point
+
+Less complex UI components 
+
+
+Improved performance 
+
+Correct
+That’s correct! This can be a benefit of the declarative approach.
+
+
+More succinct code
+
+Correct
+That’s correct! This can be a benefit of the declarative approach.
+
+
+Easier to read and debug code
+
+Correct
+That’s correct! This can be a benefit of the declarative approach.
+
+
+Reduced need for unit tests 
+
+4.
+Question 4
+In this code,a composable function is defined. What is the name of this function?
+
+1234
+ @Composable
+fun MainPanel(name: String) {
+    Text(text = "$name")
+}
+
+1 / 1 point
+
+MainPanel
+
+
+Text
+
+
+Composable
+
+Correct
+That’s correct!  MainPanel is the name of the function.
+
+5.
+Question 5
+In this code, a composable function is defined. In the second-last code line the “name” argument is passed to another function Text. What is the best description of this function?
+
+1234
+@Composable
+fun MainPanel(name: String) {
+    Text(text = "$name")
+}
+
+1 / 1 point
+
+A built-in composable function in the Compose library.
+
+
+A variable          
+
+
+A function written by the developer.
+
+Correct
+That’s correct! Text, is a built-in composable function in Compose library and it is responsible for creating the text UI element that appears on the screen.
+
+1.
+Question 1
+Imagine you are building an Android app in which you will need multiple UI elements consisting of the same structure. Which of the following is true about how you should define the composable for this UI element?
+
+1 / 1 point
+
+You should use the traditional view system instead.
+
+
+
+You should define the composable once in such a way that it is reusable. 
+
+
+
+You should ensure the composable is the root of the tree
+
+
+
+You should define one composable for each occurrence of the UI element. 
+
+
+Correct
+That’s correct! Composable functions can take in parameters and emit a UI element which can be reused in many parts of your application.
+
+2.
+Question 2
+How does an Activity allow the user to interact with an Android app? 
+
+1 / 1 point
+
+It allows the app to access system resources. 
+
+
+
+It allows the user to view content.
+
+
+
+It provides the window for the app's user interface and allows the user to interact with the UI elements. 
+
+
+Correct
+That’s correct! An Activity is the app component that contains the user interface. 
+
+3.
+Question 3
+ What is an XML file used for in an Android project?
+
+1 / 1 point
+
+ Styling a view
+
+
+
+ Defining a ViewGroup
+
+
+
+ Storing structured information
+
+
+Correct
+That's correct! An XML file in an Android app stores information on how the Android OS should draw the views on the screen.
+
+4.
+Question 4
+What is the Activity lifecycle?
+
+1 / 1 point
+
+States an activity instance goes through from start to termination
+
+
+
+A collection of callback methods
+
+
+
+A method of placing an activity’s content
+
+
+
+A function for determining the screen orientation
+
+
+Correct
+Correct! An activity progresses through different states such as created, started, and resumed while an app is in use.
+
+5.
+Question 5
+Which of the following are examples of view groups? Select all that apply. 
+
+0 / 1 point
+
+LinearLayout
+
+
+Correct
+That's correct! A LinearLayout linearly organizes the contained views horizontally or vertically as a single row or a single column.
+
+
+GridViewLayout
+
+
+This should not be selected
+Not quite. Please review the reading 
+UI representation in XML
+.
+
+
+FrameLayout
+
+
+Correct
+That's correct!  FrameLayout is designed to block out an area on the screen to display a single item.
+
+
+RelativeLayout
+
+
+Correct
+That's correct! A RelativeLayout specifies the position of contained views relative to each other.
+
+6.
+Question 6
+What is a Composable in Android UI Development? 
+
+1 / 1 point
+
+A library of user interface components.
+
+
+
+A reusable component in Jetpack Compose. 
+
+
+
+An animation used to transition between activities 
+
+
+Correct
+That’s correct! In Jetpack Compose, each UI element is represented by a special function called composable.
+
+7.
+Question 7
+Which file must you add the Jetpack Compose Preview library dependency to in order to use it in your project?
+
+1 / 1 point
+
+build.gradle
+
+
+
+MainActivity.kt
+
+
+
+strings.xml
+
+
+Correct
+Correct! To use Jetpack Compose preview add the line implementation androidx.ui:ui-tooling:0.1.0-dev13 to your build.gradle file.
+
+8.
+Question 8
+Which of the following is an Invisible UI element that acts as a container to other views?
+
+1 / 1 point
+
+Layout
+
+
+
+A tree
+
+
+
+View group
+
+
+
+View
+
+
+Correct
+That's correct! View groups are a special kind of view that do not have an appearance of their own.
+
+9.
+Question 9
+When you are specifying the size of a text element on an Android UI, you can use the sp unit of measurement. This term is shorthand for?
+
+1 / 1 point
+
+Scale-independent pixel.
+
+
+
+Pixel Point
+
+
+
+Scale-dependent pixel
+
+
+Correct
+Scale-independent pixel is correct. It is similar to dp and often used to specify font sizes.
+
+10.
+Question 10
+Which of the following lays out composables horizontally?
+
+1 / 1 point
+
+View
+
+
+
+Row
+
+
+
+Box
+
+
+
+Column
+
+
+Correct
+That's correct! The main axis for a row is the horizontal axis, so you can set the horizontal arrangement.
+1.
+Question 1
+When defining the string resource in the exercise, what was the ID of the title string? 
+
+1 / 1 point
+
+R.id.string.title
+
+
+R.string.title
+
+
+R.id.title
+
+Correct
+Correct. The string inner class in R contains the IDs of the string resources
+
+2.
+Question 2
+Adding the font size parameter to RestaurantName() composable limits it to emit Text of 32sp only.
+
+1 / 1 point
+
+ True 
+
+
+False
+
+Correct
+Correct. The font size of the RestaurantName() text would vary depending upon the value passed as an argument
+
+3.
+Question 3
+How many arguments were passed to the RestaurantNamePreview() function?
+
+1 / 1 point
+
+One 
+
+
+Two
+
+
+None 
+
+Correct
+Correct. The preview function did not accept any argument.
+

@@ -1,0 +1,556 @@
+
+Question 1
+ In the exercise, which property of the Scaffold do you use to add MyBottomNavigation?    
+
+1 / 1 point
+
+bottomBar
+
+
+topBar
+
+
+modifier
+
+Correct
+ Correct! The bottomBar is used to add MyBottomNavigation.    
+
+2.
+Question 2
+ In this exercise, which properties do you set for the BottomNavigationItem. Select all that apply.    
+
+1 / 1 point
+
+onClick
+
+Correct
+ Correct! The onClick defines what happens when the current item is clicked.     
+
+
+selected
+
+Correct
+ Correct! The selected parameter is used to check if the current item is selected.     
+
+
+icon
+
+Correct
+ Correct! The icon is used to set the icon for the current item.     
+
+
+label
+
+Correct
+ Correct! The label is used to set the label for the current item.    
+
+3.
+Question 3
+ In the exercise, which one of the following approaches is used to iterate the list with an index?    
+
+1 / 1 point
+
+forEachIndexed method
+
+
+forEach method
+
+Correct
+ Correct! ForEachIndexed provides the item and the sequential index of the item.    
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Question 1
+Which among the following actions can start navigation? Select all that apply.
+
+1 / 1 point
+
+Clicking a button
+
+Correct
+ Correct! Clicking a button can navigate to a new screen.    
+
+
+Selecting an item from the list
+
+Correct
+Correct! Selecting an item from the list can open its details.
+
+
+Clicking a tab item
+
+Correct
+Correct! Clicking a tab item can navigate to a new screen.
+
+2.
+Question 2
+Bottom Navigation only navigates to a new destination without showing the status of the active item.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+ Correct! Bottom Navigation navigates to a new destination by showing the status of the active item.    
+
+3.
+Question 3
+ Select all that apply. The fixed start navigation principle states that:     
+
+0 / 1 point
+
+The application always ends with the same starting screen while leaving the app.
+
+
+The application always starts from the same first screen. 
+
+Correct
+ Correct! The application always starts from the same first screen.    
+
+
+ The application always starts from the same screen but ends with a different screen.   
+
+You didn’t select all the correct answers
+4.
+Question 4
+The Stack works on which one of the following principles?
+
+1 / 1 point
+
+First in First out
+
+
+Last in First out
+
+
+First in Last out
+
+
+Last in Last out
+
+Correct
+Correct! The Stack works in the Last in First out principle.
+
+5.
+Question 5
+Select all that apply. 
+
+The purpose of NavHost is to:               
+
+1 / 1 point
+
+manage the Back Stack.
+
+
+take the NavController as a parameter and associate it with the NavGraph.
+
+Correct
+Correct! The NavHost takes the NavController as a parameter and associates it with the NavGraph.
+
+
+act as a container for displaying the current destination.
+
+Correct
+Correct! The NavHost acts as a container for the current destination.
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+Question 1
+ In this exercise, which function did you call to make the Column Scrollable?    
+
+1 / 1 point
+
+ Modifier.imeNestedScroll()    
+
+
+ Modifier.verticallScroll()    
+
+
+ Modifier.horizontalScroll()    
+
+Correct
+ Correct! The verticallScroll() is used for scrolling vertically.    
+
+2.
+Question 2
+ In this exercise, which property is used for arranging Row items?    
+
+1 / 1 point
+
+verticalArrangement
+
+
+horizontalArrangement
+
+Correct
+Correct! The horizontalArrangement is used with Row for arranging the children horizontally.    
+
+3.
+Question 3
+ In this exercise, which one of the following approaches was used to populate the Grid?    
+
+1 / 1 point
+
+repeat method
+
+
+forEachIndexed method
+
+
+forEach method
+
+Correct
+ Correct! repeat is used to repeat the GalleryCell() to populate the Grid.    
+
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+Question 1
+Which among the following can be used to place its children horizontally?
+
+1 / 1 point
+
+Row
+
+
+Column
+
+Correct
+Correct! The row displays its children horizontally.
+
+2.
+Question 2
+ Which one of the following arrangements adds space to the first and last child on the list while keeping other items in the center?    
+
+1 / 1 point
+
+Space around
+
+
+Space Evenly
+
+
+Space between
+
+Correct
+Correct! Space Around adds space to the first and last child on the list while keeping other items in the center.    
+
+3.
+Question 3
+ Which of the following arrangements can be used with a Column?    
+
+1 / 1 point
+
+Both Vertical and Horizontal Arrangements
+
+
+Vertical Arrangement
+
+
+Horizontal Arrangement
+
+Correct
+Correct! The Vertical arrangement is used to arrange the children in a Column.    
+
+4.
+Question 4
+ Scrolling is available to a Row and a Column without adding any modifier.    
+
+0 / 1 point
+
+True
+
+
+False
+
+Incorrect
+ Not quite. Scrolling is not available to a Row and a Column without adding any modifier.    
+
+5.
+Question 5
+ For creating a Grid of a small number of elements, a combination of Row and Column composable can be used.    
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+ Correct! You can use the Row and Column together to create a Grid.    
+
+
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+Question 1
+What are the three major parts of navigation in Jetpack Compose?
+
+1 / 1 point
+
+NavDrawer, NavFooter, NavController
+
+
+
+ NavHost, NavMenu, NavStack
+
+
+
+ NavGraph, NavHost, NavController
+
+
+
+ NavGraph, NavDrawer, NavFooter
+
+
+Correct
+Correct! A NavHost is required to link a NavController with a NavGraph. A NavGraph is required by the NavHost to navigate between composables and a NavController is required to trigger navigation between screens.
+
+2.
+Question 2
+What is a route in Jetpack Navigation?
+
+1 / 1 point
+
+A container for displaying the current destination
+
+
+
+A collection of destinations
+
+
+
+A composable destination
+
+
+
+ A unique string for every destination
+
+
+Correct
+Correct! Each composable destination corresponds to a route in the navigation graph so you should have a unique string for each one.
+
+3.
+Question 3
+True or False: The object keyword is used for creating an object without creating the class. 
+
+1 / 1 point
+
+True
+
+
+
+False
+
+
+Correct
+Correct. The object keyword is commonly used in Jetpack Compose for creating routes.
+
+4.
+Question 4
+Which of the following statements is true about defining a constant argument in a Destination?
+
+1 / 1 point
+
+ It helps organize the arguments.
+
+
+
+It reduces the amount of required code.
+
+
+
+It is required.
+
+
+Correct
+Correct! Defining a constant argument is an optional step that also helps avoid name mismatch errors.
+
+5.
+Question 5
+Given the below function ProfileScreen, which of the following is the correct definition of its corresponding destination?
+
+ 
+
+1234567891011121314
+ @Composable
+  fun ProfileScreen(userName: String?) {
+     Column(
+         Modifier.fillMaxSize(),
+         verticalArrangement = Arrangement.Center,
+         horizontalAlignment = Alignment.CenterHorizontally
+     ) {
+         Text(
+             text = "Welcome, $userName",
+             fontSize = 33.sp
+
+
+1 / 1 point
+
+ 
+
+12345678
+  interface Destinations {
+     val route: String
+  }
+  object Profile : Destinations {
+     const val argUserName = "UserName"
+     override val route = "Profile"
+  }
+
+
+
+
+
+12345678
+  interface Destinations {
+     val route: String
+  }
+  object Profile : Destinations {
+     argUserName = "UserName"
+     override val route = "Profile"
+  }
+
+
+
+
+
+12345678
+  interface Destinations {
+     val route: String
+  }
+  object Profile{
+     const val argUserName = "UserName"
+     override val route = "Profile"
+  }
+
+
+
+Correct
+Correct! The ProfileScreen function accepts an argument to be displayed. The argument to be passed is defined in the Destination object.
+
+6.
+Question 6
+Which of the following is used for the primary destinations which need to be accessed from anywhere within the app?
+
+1 / 1 point
+
+ bottomNavigation
+
+
+
+ Navigation component
+
+
+
+ TopAppBar
+
+
+Correct
+Correct! It is a common practice to use an icon, route and title for each bottom navigation item.
+
+7.
+Question 7
+Which of the following is used for a vertical list of an unknown number of items?
+
+1 / 1 point
+
+ Column
+
+
+
+ LazyRow
+
+
+
+ LazyColumn
+
+
+Correct
+Correct! LazyRow is similar to row, but it is used for horizontal scrolling lists.
+
+8.
+Question 8
+Which of the following composes only that which is in the visible viewport? Select all that apply.
+
+0 / 1 point
+
+ LazyRow
+
+
+Correct
+Correct! LazyRow creates a horizontal scrolling list.
+
+
+ LazyVerticalGrid
+
+
+
+ LazyColumn
+
+
+Correct
+Correct! LazyColumn creates a vertical scrolling list.
+
+
+LazyGrid
+
+
+You didn't select all the correct answers
+9.
+Question 9
+Which among the following are the parameters of the composable function defined in the NavHost? Select all that apply. 
+
+0 / 1 point
+
+startDestination 
+
+
+This should not be selected
+Not quite. Please review the reading 
+Navigation Examples
+.
+
+
+arguments
+
+
+
+navController
+
+
+This should not be selected
+Not quite. Please review the reading 
+Navigation Examples
+.
+
+
+route
+
+
+10.
+Question 10
+Which of the following best describes what a NavHost is?
+
+1 / 1 point
+
+NavHost acts as a container for displaying the current destination.
+
+
+
+NavHost is responsible for keeping track of the back stack.
+
+
+
+NavHost is a collection of navigable destinations.
+
+
+Correct
+Correct! NavHost takes the NavController as an argument and associates it with the NavGraph.

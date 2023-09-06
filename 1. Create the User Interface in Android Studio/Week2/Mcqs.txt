@@ -1,0 +1,543 @@
+1.
+Question 1
+When defining the string resource in the exercise, what was the ID of the title string? 
+
+1 / 1 point
+
+R.id.string.title
+
+
+R.string.title
+
+
+R.id.title
+
+Correct
+Correct. The string inner class in R contains the IDs of the string resources
+
+2.
+Question 2
+Adding the font size parameter to RestaurantName() composable limits it to emit Text of 32sp only.
+
+1 / 1 point
+
+ True 
+
+
+False
+
+Correct
+Correct. The font size of the RestaurantName() text would vary depending upon the value passed as an argument
+
+3.
+Question 3
+How many arguments were passed to the RestaurantNamePreview() function?
+
+1 / 1 point
+
+One 
+
+
+Two
+
+
+None 
+
+Correct
+Correct. The preview function did not accept any argument.
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+1.
+Question 1
+When defining the string resource in the exercise, what was the ID of the title string? 
+
+1 / 1 point
+
+R.id.string.title
+
+
+R.string.title
+
+
+R.id.title
+
+Correct
+Correct. The string inner class in R contains the IDs of the string resources
+
+2.
+Question 2
+Adding the font size parameter to RestaurantName() composable limits it to emit Text of 32sp only.
+
+1 / 1 point
+
+ True 
+
+
+False
+
+Correct
+Correct. The font size of the RestaurantName() text would vary depending upon the value passed as an argument
+
+3.
+Question 3
+How many arguments were passed to the RestaurantNamePreview() function?
+
+1 / 1 point
+
+One 
+
+
+Two
+
+
+None 
+
+Correct
+Correct. The preview function did not accept any argument.
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Question 1
+ In this exercise, the padding Modifier was used to properly space composables. 
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! The padding Modifier was used to properly space composables.    
+
+2.
+Question 2
+In this exercise, which callback was used to monitor the Text composable value change?
+
+1 / 1 point
+
+ 
+
+1
+onValueUpdate    
+
+
+1
+onTextChange
+
+
+1
+onValueChange
+
+Correct
+Correct! The onValueChange callback is used to monitor any changes in text state.
+
+3.
+Question 3
+In the exercise, how was the username and password retrieved from Text composable?
+
+1 / 1 point
+
+using string property
+
+
+using text property
+
+
+using field property
+
+Correct
+Correct! The text property was used to verify if the username and passwords are valid.
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Skip to Main Content
+Coursera
+Lovely Professional University
+
+SEARCH IN COURSE
+Search in course
+
+
+Ashwini Kumar
+
+Create the User Interface in Android Studio
+Week 2
+Self-review: Managing state in Compose
+Modifiers & Interactivity
+Managing State
+Video: VideoWhat is a state?
+. Duration: 4 minutes4 min
+Video: VideoDeclaring state
+. Duration: 5 minutes5 min
+Video: VideoRecomposition
+. Duration: 5 minutes5 min
+Video: VideoSaving and Restoring State
+. Duration: 3 minutes3 min
+Reading: ReadingSurviving configuration changes
+. Duration: 3 minutes3 min
+Video: VideoStateful vs stateless composables
+. Duration: 5 minutes5 min
+Reading: ReadingExercise: Managing state in Compose
+. Duration: 30 minutes30 min
+Reading: ReadingSolution: Managing state in Compose
+. Duration: 30 minutes30 min
+Practice Quiz: Self-review: Managing state in Compose
+3 questions
+Practice Quiz: Knowledge check: Managing state
+5 questions
+Reading: ReadingAdditional resources
+. Duration: 5 minutes5 min
+Laying out Composables
+Self-review: Managing state in Compose
+Practice Quiz9 minutes • 9 min
+Submit your assignment
+Receive grade
+To Pass 80% or higher
+Your grade
+100%
+We keep your highest score
+
+Self-review: Managing state in Compose
+Practice Quiz. • 9 min. • 3 total points available.3 total points
+
+Congratulations! You passed!
+Grade received 100%
+To pass 80% or higher
+1.
+Question 1
+ In this exercise, the padding Modifier was used to properly space composables. 
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! The padding Modifier was used to properly space composables.    
+
+2.
+Question 2
+In this exercise, which callback was used to monitor the Text composable value change?
+
+1 / 1 point
+
+ 
+
+1
+onValueUpdate    
+
+
+1
+onTextChange
+
+
+1
+onValueChange
+
+Correct
+Correct! The onValueChange callback is used to monitor any changes in text state.
+
+3.
+Question 3
+In the exercise, how was the username and password retrieved from Text composable?
+
+1 / 1 point
+
+using string property
+
+
+using text property
+
+
+using field property
+
+Correct
+Correct! The text property was used to verify if the username and passwords are valid.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Question 1
+When chaining modifiers, which order are they applied in?
+
+1 / 1 point
+
+left to right
+
+
+
+alphabetical order
+
+
+
+top to bottom
+
+
+
+right to left
+
+
+Correct
+That's correct! Changing the order of chained modifiers may have a different effect on the overall arrangement, positioning, size, or behavior of the UI elements. 
+
+2.
+Question 2
+Which of the following Material Components can be implemented using Jetpack Compose? Select all that apply.
+
+0 / 1 point
+
+button
+
+
+Correct
+That's correct! Jetpack Compose allows you to implement a button with a consistent look and feel.
+
+
+list
+
+
+This should not be selected
+Not quite. Please review the video 
+Scaffold
+. 
+
+
+text-field
+
+
+Correct
+Correct! Jetpack Compose allows you to implement a text-field with a consistent look and feel.
+
+
+card
+
+
+Correct
+Correct! Jetpack Compose allows you to implement a card with a consistent look and feel.
+
+3.
+Question 3
+Which of the following is the correct way to add a spacing of 10 dp around all four sides of a text composable?
+
+1 / 1 point
+
+
+12345
+Text(
+    text = “Hello World!”,
+    padding = Modifier.padding(10.dp)
+)
+
+
+
+
+
+12345
+Text(
+    text = “Hello World!”,
+    modifier = padding(10.dp)
+)
+
+
+
+
+
+12345
+Text(
+    text = “Hello World!”,
+    modifier = Modifier.padding(10.dp)
+)
+
+
+
+Correct
+That's correct! If you want to add different padding to specific sides, you can define spacing for each side separately. 
+
+4.
+Question 4
+Which of the following is the special object Compose uses to hold the value of a state?
+
+1 / 1 point
+
+MutableState
+
+
+
+State
+
+
+
+remember 
+
+
+
+MutableStateOf
+
+
+Correct
+That's correct! To define a MutableState you can call the built-in MutableStateOf function and pass in a value you want to hold as a parameter.
+
+5.
+Question 5
+Which of the following is the correct programming term for executing a function when an event occurs?
+
+1 / 1 point
+
+handling the event
+
+
+
+an event
+
+
+
+listeners
+
+
+
+user action
+
+
+Correct
+That's correct! A certain piece of code can be executed when an event occurs, for example showing a dialogue box after a click or tap.
+
+6.
+Question 6
+Which of the following is a UI pattern that provides a side-panel for navigating between different parts of the application?
+
+1 / 1 point
+
+NavigationBar
+
+
+
+Navigation Drawer Scaffold
+
+
+
+BottomSheetScaffold
+
+
+
+Backdrop Scaffold
+
+
+Correct
+That's correct! The Navigation Drawer Scaffold is commonly used to provide access to an application’s top-level navigation items.
+
+7.
+Question 7
+Which of the following Design Systems can Jetpack Compose make it easy to implement?
+
+1 / 1 point
+
+Human Interface Guidelines
+
+
+
+Uber Design 
+
+
+
+Material Design
+
+
+
+Polaris
+
+
+Correct
+That's correct! The Navigation Drawer Scaffold is commonly used to provide access to an application’s top-level navigation items.
+
+8.
+Question 8
+What of the following is a parameter that accepts composable content?
+
+1 / 1 point
+
+composables
+
+
+
+modifiers
+
+
+
+lambdas
+
+
+
+slots
+
+
+Correct
+Correct! Slots are parameters that accept composable content as a generic lambda.
+
+9.
+Question 9
+Which of the following Jetpack Compose Material components can be implemented as built-in composables? Select four that apply.
+
+1 / 1 point
+
+Slider
+
+
+Correct
+That's correct! A Slider is a built-in composable that can be implemented in Jetpack Compose.
+
+
+Avatar
+
+
+
+
+Button
+
+
+Correct
+That's correct! A Button is a built-in composable that can be implemented in Jetpack Compose.
+
+
+Pattern
+
+
+
+Card
+
+
+Correct
+That's correct! A Card is a built-in composable that can be implemented in Jetpack Compose.
+
+
+TextField
+
+
+Correct
+That's correct! A TextField is a built-in composable that can be implemented in Jetpack Compose.
+
+10.
+Question 10
+Which of the following UI patterns would be best suited to carry the name of the app and some buttons relevant to the current screen?
+
+1 / 1 point
+
+a navigation drawer
+
+
+
+snackbar
+
+
+
+a top app bar
+
+
+
+floating action buttons
+
+
+Correct
+Correct! A top app bar is usually used as a composite component that consists of several UI elements.
